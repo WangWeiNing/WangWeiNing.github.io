@@ -1,6 +1,6 @@
 # Site settings
 title: Wang Blog
-SEOTitle: 王维宁的博客 | Wang Blog
+SEOTitle: 王维宁 | Wang Blog
 header-img: img/home-bg.jpg
 email: 1172693953@qq.com
 description: "关于后端 | Erlang | 架构 | 这里是 @王维宁 的个人博客，与你一起发现更大的世界。"
@@ -86,7 +86,7 @@ service-worker: true
 
 # Friends
 friends: [
-    {
+    #{
     #     title: "Su",
     #     href: "http://su.gallery/"
     # },{
