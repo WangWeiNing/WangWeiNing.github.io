@@ -1,22 +1,22 @@
 # Site settings
-title: Hux Blog
+title: Wang Blog
 SEOTitle: 王维宁的博客 | Wang Blog
 header-img: img/home-bg.jpg
 email: 1172693953@qq.com
 description: "关于后端 | Erlang | 架构 | 这里是 @王维宁 的个人博客，与你一起发现更大的世界。"
 keyword: "王维宁, 博客, 程序员, IT, Wang Blog, 后端, Erlang, Lua, C, 霉霉的男朋友"
-url: "https://wang.github.io"              # your host, for absolute URL
+url: "https://wangweining.com"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
 # SNS settings
 RSS: false
-weibo_username:     huxpro
+weibo_username:     JackSparrow_A
 zhihu_username:     crazy
 github_username:    wangweining
-twitter_username:   huxpro
-#facebook_username:  huxpro
+# twitter_username:   huxpro
+# facebook_username:  huxpro
 # linkedin_username:  firstname-lastname-idxxxx
 
 
@@ -48,7 +48,7 @@ kramdown:
 
 
 # Disqus settings
-disqus_username: hux
+disqus_username: Wang
 
 # Netease setttings
 netease_comment: false
@@ -67,7 +67,7 @@ ga_domain: wangweining.com
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "写写代码，做做设计，<br>离开世界之前，一切都是过程"
+sidebar-about-description: "如何去停止一个谎言"
 sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -90,34 +90,4 @@ friends: [
     #     title: "Su",
     #     href: "http://su.gallery/"
     # },{
-        title: "乱序",
-        href: "http://mida.re/"
-    },{
-        title: "前端外刊评论",
-        href: "http://qianduan.guru/"
-    },{
-        title: "天镶的博客",
-        href: "http://lingyu.wang/"
-    },{
-        title: "Luke 的自留地",
-        href: "http://hmqk1995.github.io"
-    },{
-        title: "Ebn's Blog",
-        href: "http://ebnbin.com/"
-    },{
-        title: "SmdCn's Blog",
-        href: "http://blog.smdcn.net"
-    },{
-        title: "解旻的博客",
-        href: "http://xieminis.me/"
-    },{
-        title: "DHong Say",
-        href: "http://dhong.co"
-    },{
-        title: "尹峰以为",
-        href: "http://ingf.github.io/"
-    },{
-        title: "前端神盾局",
-        href: "http://wepiaofei.github.io/blog/"
-    }
 ]
