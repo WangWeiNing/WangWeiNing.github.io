@@ -25,15 +25,15 @@ tags:
   * 通常，读与写操作都从当前文件偏移处开始，并增加读写的字节数到偏移量。  
   * 当打开一个文件时，除非指定O_APPEND选项，否则该偏移量被设置为0
   * lseek为一个系统调用，并不产生任何IO操作，并且偏移量是记录在内核中的一个值。
-  * 文件偏移量可以设置大于当前文件长度，但在这种情况下写入会造成"文件空洞"，文件中没有写过的字节都被读为0，文件空洞是否占用存储与文件系统的实现有关，常用的ext4会占用存储空间
-	
-          #include <unistd.h><br/>
-	  off_t lseek(int fd, off_t offset, int whence);  <br/>
-	  如果设置成功，返回新的文件偏移量，若出错，返回-1.  <br/>
-	  whence是决定offset相对于文件那个位置.  <br/>
-	  SEEK_SET相对于文件开始处  <br/>
-	  SEEK_CUR相对于文件当前位置  <br/>
-	  SEEK_END相对于文件末尾  <br/>
-	  offset可以为负  <br/>
+  * 文件偏移量可以设置大于当前文件长度，但在这种情况下写入会造成"文件空洞"，文件中没有写过的字节都被读为0，文件空洞是否占用存储与文件系统的实现有关，常用的ext4会占用存储空间  
+
+	#include <unistd.h><br/>
+	off_t lseek(int fd, off_t offset, int whence);  <br/>
+	如果设置成功，返回新的文件偏移量，若出错，返回-1.  <br/>
+	whence是决定offset相对于文件那个位置.  <br/>
+	SEEK_SET相对于文件开始处  <br/>
+	SEEK_CUR相对于文件当前位置  <br/>
+	SEEK_END相对于文件末尾  <br/>
+	offset可以为负  <br/>
 
 				          
