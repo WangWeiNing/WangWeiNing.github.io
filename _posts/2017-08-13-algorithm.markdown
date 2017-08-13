@@ -3,7 +3,7 @@ layout: post
 title: "KMP算法探析"
 author: "Wang"
 date: 2017-08-13 16:34:12
-tags
+tags:
   - 算法
 ---
 # KMP算法探析
