@@ -3,7 +3,7 @@ layout: post
 title: "实用UNIX工具AWK"
 author: "Wang"
 date: 2017-08-13 21:34:12
-header-img: post-bg-2015.jpg
+header-img: img/post-bg-2015.jpg
 tags:
   - UNIX
   - Tools
@@ -31,10 +31,14 @@ AWK在缺省状态下用换行来分割记录，用空格来分割域
 
 ## pattern与action  
 
-在上面的例子中并没有用到pattern，当pattern缺省状态下，默认是匹配每个记录，而action就是“{print $2}”。同样action也可以省略，缺省状态下的action则是{print $0}。pattern和action只能缺省其中一个而不能两个都缺省。首先我们先看几种常见的pattern形式。  
+在上面的例子中,pattern是缺省的，action就是“{print $2}”,当pattern缺省状态下，默认是匹配每个记录。同样action也可以省略，缺省状态下的action则是{print $0}，语义是输出整条记录。pattern和action只能缺省其中一个而不能两个都缺省。首先我们先看几种常见的pattern形式。  
 
-* 正则pattern
+* 正则匹配pattern
 * begin／end
 * beginfile／endfile
 * 表达式pattern
+
+#### 正则匹配pattern
+
+
 
