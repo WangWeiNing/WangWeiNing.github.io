@@ -24,3 +24,17 @@ AWK在缺省状态下用换行来分割记录，用空格来分割域
 当AWK处理此文件的时候，在参数缺省状态下，会将Lucy 120 20当成一条记录，Jack 130 21当成一条记录，Lucy这条记录将分成三个域分别是Lucy 120 20，Jack也是如此划分。以下命令将打印每条记录的第二个域，我们可以在awk程序中使用“$N”的形式表示域的内容，$0表示整条记录。
 
     awk '{print $2}' inputfile.txt
+    // 将输出以下内容
+    120
+    130
+
+
+## pattern与action  
+
+在上面的例子中并没有用到pattern，当pattern缺省状态下，默认是匹配每个记录，而action就是“{print $2}”。同样action也可以省略，缺省状态下的action则是{print $0}。pattern和action只能缺省其中一个而不能两个都缺省。首先我们先看几种常见的pattern形式。  
+
+* 正则pattern
+* begin／end
+* beginfile／endfile
+* 表达式pattern
+
