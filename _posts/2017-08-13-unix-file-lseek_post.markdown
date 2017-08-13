@@ -11,7 +11,7 @@ tags:
 
 
 
-# Unix文件I/O 一
+# Unix文件I/O
 
 ## 1.文件描述符  
 
@@ -30,13 +30,13 @@ tags:
 
       
           #include <unistd.h>
-	      off_t lseek(int fd, off_t offset, int whence);
-	          如果设置成功，返回新的文件偏移量，若出错，返回-1.
-		      whence是决定offset相对于文件那个位置，
-		          SEEK_SET相对于文件开始处
-			      SEEK_CUR相对于文件当前位置
-			          SEEK_END相对于文件末尾
-				      offset可以为负
+	  off_t lseek(int fd, off_t offset, int whence);
+	  如果设置成功，返回新的文件偏移量，若出错，返回-1.
+	  whence是决定offset相对于文件那个位置，
+	  SEEK_SET相对于文件开始处
+	  SEEK_CUR相对于文件当前位置
+	  SEEK_END相对于文件末尾
+	  offset可以为负
 
 				          
-					  * 文件偏移量可以设置大于当前文件长度，但在这种情况下写入会造成"文件空洞"，文件中没有写过的字节都被读为0，文件空洞是否占用存储与文件系统的实现有关，常用的ext4会占用存储空间
+	  * 文件偏移量可以设置大于当前文件长度，但在这种情况下写入会造成"文件空洞"，文件中没有写过的字节都被读为0，文件空洞是否占用存储与文件系统的实现有关，常用的ext4会占用存储空间
